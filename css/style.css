@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #212121;
+    --primary-color-light: #484848;
+    --primary-color-dark: #000;
+    --secondary-color: #80d8ff;
+    --secondary-color-light: #b5ffff;
+    --secondary-color-dark: #49a7cc;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    background: #DDDEDD;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 80px;
+}
+
+a {
+    color: var(--secondary-color-dark);
+}
+
+
+
+/* Nav styles */
+header {
+    background: var(--primary-color);
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+
+header nav {
+    height: 4em;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li {
+    padding: 0 5px;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+header nav ul li#signOut {
+    display: none;
+}
+
+li#accountLink:hover li#signOut{
+    display: inline;
+}
+
+header nav a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+header nav a:hover {
+    color: var(--secondary-color-dark)
+}
+
+
+/* Post Styles */
+.post-preview {
+    padding: 20px;
+}
+
